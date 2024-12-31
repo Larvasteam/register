@@ -1,0 +1,28 @@
+{
+    "description": "milesjadearticles",
+    "domain": "sites.google.com",
+    "subdomain": "milesjadearticles/work",
+
+    "owner": {
+        "repo": "https://github.com/Larvasteam/milesjadearticles",
+        "email": "manditoryASAP@gmail.com"
+    },
+
+    "record": {
+        "A": ["102.132.97.0", "102.133.72.0"],
+        "AAAA": ["2c0f:fe38::1", "2c0f:fe38::2"],
+        "CNAME": "ghs.googlehosted.com",
+        "MX": ["aspmx.l.google.com", "alt1.aspmx.l.google.com", "alt2.aspmx.l.google.com"],
+        "TXT": ["v=spf1 include:_spf.google.com ~all"],
+        "CAA": [
+            { "flags": 0, "tag": "issue", "value": "letsencrypt.org" },
+            { "flags": 0, "tag": "issuewild", "value": "sectigo.com" }
+        ],
+        "SRV": [
+            { "priority": 10, "weight": 50, "port": 5060, "target": "sip.milesjadearticles.com" },
+            { "priority": 20, "weight": 10, "port": 5222, "target": "xmpp.milesjadearticles.com" }
+        ]
+    },
+
+    "proxied": false
+}
